@@ -267,7 +267,7 @@ sending a systems theory to the doubly indexed category of systems in it.
 
 \section{Composing behaviors in general}\label{sec.behaviors_general}
 
-Before we get to this abstract defintion, we will take our time exploring the
+Before we get to this abstract definition, we will take our time exploring the
 sorts of compositionality results one may prove quickly by working in the double
 category of arenas.
 
@@ -620,7 +620,7 @@ and that $\cat{A}(\id_D) = \id_{\cat{A}(D)}$.\footnote{Here, we are hiding some
   coherence issues. While our doubly indexed category of deterministic systems
   will satisfy this functoriality condition on the nose, we will soon see a
   doubly indexed category of matrices of sets for which this law only holds up
-  to a coherence isomorphism. Again, the issue invovles shuffling parentheses
+  to a coherence isomorphism. Again, the issue involves shuffling parentheses
   around, and we will sweep it under the rug.}
   \item (Horizontal Lax Functoriality) For horizontal maps $f : D_1 \to D_2$, $g :
     D_2 \to D_3$ and $h : D_3 \to D_4$, the compositors $\mu$ satisfy the
@@ -632,7 +632,7 @@ and that $\cat{A}(\id_D) = \id_{\cat{A}(D)}$.\footnote{Here, we are hiding some
   \cat{A}(D_1)$ is the identity profunctor, $\cat{A}(\id_{D_1}) = \cat{A}(D_1)$.
   Furthermore, $\mu_{\id_{D_1}, f}$ and $\mu_{f, \id_{D_2}}$ are equal to the
   isomorphisms of \cref{ex.identity_profunctor} given by the naturality of
-  $\cat{A}(f)$ on the left and right respectively. We may sumarize this may
+  $\cat{A}(f)$ on the left and right respectively. We may summarize this may
   saying that 
 $$\mu_{\id, f} = \id_{\cat{A}(f)} = \mu_{f, \id}.$$
 \end{itemize}
@@ -938,8 +938,8 @@ a functor.
     \]
     such that the following laws hold:
     \begin{itemize}
-    \item $F$ commutes with horizontal compostition: $F(\alpha \mid \beta) = F\alpha \mid F\beta$.
-    \item $F$ commutes with vertical comopsition: $F\left( \frac{\alpha}{\beta} \right) = \frac{F\alpha}{F\beta}$.
+    \item $F$ commutes with horizontal composition: $F(\alpha \mid \beta) = F\alpha \mid F\beta$.
+    \item $F$ commutes with vertical composition: $F\left( \frac{\alpha}{\beta} \right) = \frac{F\alpha}{F\beta}$.
     \item $F$ sends horizontal identities to horizontal identities, and vertical
       identities to vertical identities.
     \end{itemize}
@@ -1686,7 +1686,7 @@ indexed functor.
 \]
 There is a single natural transformation given as the composite of this
 ``pasting diagram''. But, if we read it by composing vertically first, and then
-composing horizontally second, we arive at $(F \then G)^{\frac{j}{k}}$, while if
+composing horizontally second, we arrive at $(F \then G)^{\frac{j}{k}}$, while if
 we read it by composing horizontally first and then vertically second, we get
 the composite of $(F \then G)^j$ and $(F \then G)^k$ as desired.
 \item (Horizontal Functoriality) Let $f : D_1 \to D_2$ and $g : D_2 \to D_3$ be
@@ -1907,12 +1907,12 @@ We have learned about a variety of systems theory in this book:
 which may be defined for any cartesian category $\cat{C}$. While we have focused
 so far on the case $\cat{C} = \smset$, many other cartesian categories are of
 interest in the study of deterministic dynamical systems. For example, in
-ergodic theory we most often use the category of measureable spaces and
+ergodic theory we most often use the category of measurable spaces and
 measurable functions.\footnote{We most often consider maps which preserve a
   specific measure on a space as well, but the category of such measure
   preserving maps is not cartesian. Often one needs to go and twiddle these
   general definitions of systems theory in particular cases to suit the particular
-  needs of a subject.} We often assume the dynamics of the systems are not arbitary
+  needs of a subject.} We often assume the dynamics of the systems are not arbitrary
 set maps, but are furthermore continuous or differentiable; this means working
 in the cartesian categories of topological spaces or differentiable manifolds.
 \item There are also the differential systems theories
@@ -2023,7 +2023,7 @@ we considered this map $\phi$ as a lens $\lens{\phi}{\id} : \lens{T_2 F \State{S
 This is a $(\cat{B}, T_2)$-system, and this process is how we may use a change
 of systems theories to turn $(\cat{A}, T_1)$-systems into $(\cat{B},T_2)$-systems.
 
-We therefore arrive at the following formal defintion of change of systems theory.
+We therefore arrive at the following formal definition of change of systems theory.
 \begin{definition}\label{def.change_of_doctrine}
   Let $(\cat{A} : \cat{C} \to \Cat{Cat}, T_1)$ and $(\cat{B} : \cat{D} \to
   \Cat{Cat}, T_2)$ be theories of dynamical systems. A \emph{change of systems theories}
@@ -2144,7 +2144,7 @@ elements with non-zero probability. Therefore,
 \cref{prop.morphism_commutative_monoid_change_doctrine} gives us a change of
 systems theory $\nondet_{\probset} \to \nondet_{\powset}$ which reinterprets a
 probabilistic system as a possibilistic one where the state $s'$ is possibly the
-udpate $\phi_{\ast}\update{S}(s, i)$ of state $s$ with input $i$ just when just
+update $\phi_{\ast}\update{S}(s, i)$ of state $s$ with input $i$ just when just
 when the probability $\update{S}(s, i)(s')$ that $s$ will transition to $s'$ on
 input $i$ is non-zero.
 \end{example}
@@ -2157,7 +2157,7 @@ categories. Then there is a change of systems theory
 \[
 ((F, \overline{F}), \id) : \determ_{\cat{C}} \to \determ_{\cat{D}} 
 \]
-from the deterministic systems theoy in $\cat{C}$ to the cartesian systems theory in $\cat{D}$.
+from the deterministic systems theory in $\cat{C}$ to the cartesian systems theory in $\cat{D}$.
 \end{proposition}
 \begin{proof}
 We need to construct the indexed functor $(F, \overline{F})$, and then prove
@@ -2195,7 +2195,7 @@ But since $F$ is cartesian, $F(\pi_2) = \pi_2$, so these are equal.
 
 For example, it is obvious that any deterministic dynamical system whose
 $\update{}$ and $\expose{}$ maps are continuous gives rise to a deterministic
-dynamcial system without the constraint of continuity, simply by forgetting that
+dynamical system without the constraint of continuity, simply by forgetting that
 the maps are continuous. We formalize this observation by applying
 \cref{prop.change_of_doctrine_cartesian} to the forgetful functor $\Fun{U} : \Cat{Top}
 \to \smset$ which sends a topological space to its underlying set of points.
@@ -2209,7 +2209,7 @@ topology. This is formalized by applying
 
 The most interesting examples of changes of systems theory are the ones which move
 between different sorts of systems theory, such as from differential to deterministic.
-An example of this is the Euler approximation, which takes a Eulidean
+An example of this is the Euler approximation, which takes a Euclidean
 differential system to a deterministic system.
 
 Let's take a minute to recall the Euler method. If $\lens{u}{r} : \lens{\rr^n}{\rr^n} \fromto \lens{\rr^k}{\rr^m}$
@@ -2570,7 +2570,7 @@ $\psi$ is a $\lens{f_{\flat}}{f}$-behavior then $F\psi$ is a $\lens{\overline{F}
 \end{itemize}
 
 \begin{example}
-For Euler approximatation 
+For Euler approximation 
   \[
 \mathcal{E}_{\varepsilon} : \eucdiff_{|\textbf{Aff}} \to \determ_{\Cat{Euc}},
   \]
@@ -2606,7 +2606,7 @@ $\varphi$ and $\lens{f_{\flat}}{f}$ in the appropriate double category of arenas
   formula: if $u(s, i) = 0$, then $\mathcal{E}_{\varepsilon}u(s, i) = s +
   \varepsilon \cdot u(s, i) = s$. But we deduced this fact from our general
   definition of change of systems theory. This sort of analysis can tell us precisely
-  which sorts of behaviors are preserved even in situtations where it may not be
+  which sorts of behaviors are preserved even in situations where it may not be
   so obvious from looking at a defining formula.
 
   The fact that $\Cat{Sys}(\mathcal{E}_{\varepsilon})$ is a doubly indexed
@@ -2632,6 +2632,6 @@ various sorts of composition --- of systems and of behaviors --- and their
 relationships. We then saw how this construction varied as we changed systems theory.
 
 There are other examples of changes of systems theories not covered here. For example,
-the Rutta-Kunge approximation can be seen as a change of systems theory; see \cite{ngotiaoco2017compositionality}.
+the Runge–Kutta approximation can be seen as a change of systems theory; see \cite{ngotiaoco2017compositionality}.
 
 \end{document}
