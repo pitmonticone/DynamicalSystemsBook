@@ -3204,7 +3204,7 @@ Let $\cat{C}$ be a cartesian category and $\cat{D}$ be the class of product proj
   \end{example}
 
   \begin{example}
-Let $\cat{C}$ be a category with pullbacks and $\cat{D} = \cat{C}$ be all maps. If we define $TC := C \times C$ and $\pi = \pi_{1} : C \times C \to C$ in the same way as in \cref{ex:cartesian.cat.display.doc}, then the systems theory $\dispdoc_{\cat{C}, T}$ is the systems theory of \emph{dependent} deterministic systems. The main difference between this systems theory and the ordinary determinstic systems theory is that what sort of input a system may take in can depend on the current exposed variable. In particular, an interface for a dependent deterministic system $\Sys{S}$ will consist of a map $v : \In{S} \to \Out{S}$ which we can think of sending each input to the output it is valid for. The update is then of the form
+Let $\cat{C}$ be a category with pullbacks and $\cat{D} = \cat{C}$ be all maps. If we define $TC := C \times C$ and $\pi = \pi_{1} : C \times C \to C$ in the same way as in \cref{ex:cartesian.cat.display.doc}, then the systems theory $\dispdoc_{\cat{C}, T}$ is the systems theory of \emph{dependent} deterministic systems. The main difference between this systems theory and the ordinary deterministic systems theory is that what sort of input a system may take in can depend on the current exposed variable. In particular, an interface for a dependent deterministic system $\Sys{S}$ will consist of a map $v : \In{S} \to \Out{S}$ which we can think of sending each input to the output it is valid for. The update is then of the form
 \[
 \begin{tikzcd}
 \State{S} \times_{\Out{S}} \In{S} \ar[rr, "\update{S}"] & & \State{S}
