@@ -58,7 +58,7 @@ a number of questions:
 \end{itemize}
 
 Different people have decided on different answers to these questions for
-different purposes. Here are three of the most widespread differents ways to answer those
+different purposes. Here are three of the most widespread different ways to answer those
 questions:
 \begin{enumerate}
   \item We'll assume the states form a discrete set, and that if we know the
@@ -113,7 +113,7 @@ never change --- that our system will always interface with
 
 The dynamical systems we will see in this book are \emph{open} in the sense that
 they take in inputs from their environment and expose outputs back to their
-environment. Because of this, our systems can interact with eachother. One
+environment. Because of this, our systems can interact with each other. One
 system can take what the other system outputs as part of its input, and the
 other can take what the first outputs as part of its input. For example, when we
 have a conversation, I take what I hear from you and use it to change how I
@@ -588,7 +588,7 @@ from exposing their whole state (which means $\State{S} = \Out{S}$ and $\expose{
 
 \begin{example}[SIR model]\label{ex.SIR_model_discrete}
   The set of states for a deterministic system doesn't need to be finite. The $\Sys{SIR}$ model
-  is an epimediological model used to study how a disease spreads through a
+  is an epidemiological model used to study how a disease spreads through a
   population. ``SIR'' stands for ``susceptible'', ``infected'', and, rather
   ominously, ``removed''. This model is usually presented as a system of
   differential equations --- what we will call a differential system --- and we will see it in that form in \cref{ex.SIR_model_diff}.
@@ -714,7 +714,7 @@ anything else. But we will often end up with a closed system as the result of
 wiring together some systems.
 
 For example, suppose we have an $\Sys{Agent}$ acting within a
-$\Sys{Environment}$. The agent will take an action, and the evironment will
+$\Sys{Environment}$. The agent will take an action, and the environment will
 respond to that action. Depending on the action taken and response given, the
 agent and the environment will update their states. We can model this by the
 following wiring diagram:
@@ -756,8 +756,8 @@ What would happen to a system $\Sys{S}$ if its set of parameters or output value
   \emph{La nature ne fait jamais des sauts} - Liebniz
 \end{quote}
 
-A quirk of modeling dynamical systems as determinstic systems is that
-determinstic systems lurch from one state to the next. In life, there are no
+A quirk of modeling dynamical systems as deterministic systems is that
+deterministic systems lurch from one state to the next. In life, there are no
 next moments. Time, at least at human scales and to a first approximation, flows
 continuously.
 
@@ -797,7 +797,7 @@ often they are being eaten will depend on how many predators there are out there
 
 The population of any predator will also change according to a birth rate
 and death rate. Suppose we have a similarly defined system of $\Sys{Foxes}$
-goverened whose population is governed by the differential equation
+governed whose population is governed by the differential equation
 \[
 \frac{df}{dt} = \const{b}_{\Sys{Foxes}} \cdot f - \const{d}_{\Sys{Foxes}}
 \cdot f.
@@ -904,13 +904,13 @@ consists of:
   including the category $\Cat{Euc}$ of Euclidean spaces and smooth maps
   (\cref{def.euc_cat}). It appears that a differential system is the same thing as a
   deterministic system in the cartesian category $\Cat{Euc}$. But while the
-  $\rr^n$s occuring in $\update{S} : \rr^n \times \rr^m \to \rr^n$ look the
+  $\rr^n$s occurring in $\update{S} : \rr^n \times \rr^m \to \rr^n$ look the
   same, they are in fact playing very different roles. The $\rr^n$ on the left
   is playing the role of the state space, while the $\rr^n$ on the left is
   playing the role of the tangent space at $s$ for some state $s \in \rr^n$. The
   difference will be felt in \cref{chapter.3} when we study behaviors of
   systems: the way a trajectory is defined is different
-  for differential systems and determinstic systems. For differential systems, a
+  for differential systems and deterministic systems. For differential systems, a
   trajectory will be a solution to the system of differential equations, that
   is, a function $s : \rr \to \rr^n$ which satisfies 
 $$\frac{ds}{dt}(t) = \update{S}(s(t), i(t)).$$
@@ -929,7 +929,7 @@ be a sequence $s_j$ of states so that $s_{j + 1} = \update{S}(s_j, i_j)$.
 
 \begin{example}\label{ex:lotka.volterra.model}
   The system of $\Sys{Rabbits}$ has $1$ state variable (the population of
-  rabbits), $2$ parameters (the birth and death rates of the rabbbits), and $1$ exposed
+  rabbits), $2$ parameters (the birth and death rates of the rabbits), and $1$ exposed
   variable. It exposes its whole state, so that $\expose{S} = \id$, and its
   update is given by
   \[
@@ -1470,7 +1470,7 @@ When a deterministic system is presented as a transition diagram (See
 input and following the arrow with that label, and then outputting the label on the
 resulting node. When we wire together systems presented as transition diagrams,
 the dynamics then involve reading the input labels of all inner systems, moving
-along all the arrows with those labels, and then outputing the labels at each
+along all the arrows with those labels, and then outputting the labels at each
 state, possible into the input of another system.
 
 \begin{exercise}\label{ex.wiring_transition_diagrams}
@@ -1579,12 +1579,12 @@ That is, each city will run its own $\Sys{SIR}$ model, and each of the three
 populations can flow between cities.
 \end{definition}
 
-Now, to define a mutli-city $\Sys{SIR}$ model, we need to know what cities we
+Now, to define a multi-city $\Sys{SIR}$ model, we need to know what cities we
 are dealing with and how population flows between them. We'll call this a
 \emph{population flow graph}.
 
 \begin{definition}\label{def.population_flow_graph}
-  A \emph{population-flow graph} (for a mutli-city $\Sys{SIR}$ model) is a graph
+  A \emph{population-flow graph} (for a multi-city $\Sys{SIR}$ model) is a graph
   whose nodes are labeled by cities and whose edges $\Sys{City}_1 \to
   \Sys{City}_2$ are labeled by
   $3 \times 3$ real diagonal matrices $\const{Flow}_{1\to
@@ -1986,7 +1986,7 @@ diagrams, and then erasing the middle layer of boxes.
  Wiring diagrams are designed to
 express the flow of variables through the system; how they are to be copied from
 one port to another, how they are to be shuffled about, and (though we haven't
-had need for this yet) how they are to be deleted or forgotton.
+had need for this yet) how they are to be deleted or forgotten.
 
 
 
@@ -1999,7 +1999,7 @@ categories of arities, which are the free cartesian categories.
 
 \begin{definition}\label{defn:category.of.arities}
   The category $\arity$ of arities is the free cartesian category generated by
-  a single object $\XX$. That is, $\arity$ constains an object $\XX$, called
+  a single object $\XX$. That is, $\arity$ contains an object $\XX$, called
   the \emph{generic object}, and for any finite set $I$, there is an $I$-fold
   power $\XX^I$ of $\XX$. The only maps are those that can be defined from the
   product structure by pairing and projection.
@@ -2264,7 +2264,7 @@ and vice versa:
 \end{enumerate}
 \end{exercise}
 
-Ok, so the wiring diagrams correponds to the lenses in the category of arities.
+Ok, so the wiring diagrams corresponds to the lenses in the category of arities.
 But do they compose in the same way? Composition of wiring diagrams is given by
 nesting: to compute $\lens{w^{\sharp}}{w} \then \lens{u^{\sharp}}{u}$, we fill
 in the inner box of $\lens{u^{\sharp}}{u}$ with the outer box of
@@ -2623,7 +2623,7 @@ Combine \cref{prop.arity_universal_property} with \cref{prop.lens_functoriality}
     w &= (t : \Set{Hour},\, m : \Set{a.m./p.m.} \mapsto t : \Set{Hour},\, m : \Set{a.m./p.m.}) \\
     w^{\sharp} &= (t : \Set{Hour},\, m : \Set{a.m./p.m.} \mapsto t : \Set{Hour})
   \end{align*}
-  giving us a wiring diagram in $\Cat{WD}_{\cat{T}}$. We can then interepret
+  giving us a wiring diagram in $\Cat{WD}_{\cat{T}}$. We can then interpret
   this as the lens from $\cref{ex.ClockWithDisplay}$ as the image of this wiring
   diagram which interprets the types $\Set{a.m./p.m.}$ and $\Set{Hour}$ as the
   actual sets $\{\const{a.m.},\const{p.m.}\}$ and $\{1, 2,\ldots, 12\}$ --- which is choosing the $C_{-} : \cat{T} \to \smset$ used in \cref{prop.interpret_typed_wiring_diagram}.
@@ -2779,7 +2779,7 @@ and therefore that $g^{\ast} = f^{\ast}$ as maps $\XX^I \to \XX^J$.
 
 How do we know that the extra maps in a Lawvere theory really do come from the
 operations of an algebraic theory? We show that the Lawvere theory satisfies a
-certain universal property: cartesian functors out of it correpond to
+certain universal property: cartesian functors out of it correspond to
 \emph{models} of the theory. If this is the case, we say that the Lawvere theory
 is \emph{presented} by the algebraic theory.
 
@@ -2845,7 +2845,7 @@ diagrams with operations from $\cat{L}$.
   able to put matrices in the beads.
 \end{example}
 
-\section{Summary and Futher Reading}
+\section{Summary and Further Reading}
 
 In this first chapter, we introduced deterministic and differential systems and
 saw how they could be composed using wiring diagrams. The trick is that both
