@@ -30,7 +30,7 @@ the next character will be. This would give us a \emph{stochastic} model of the
 email-writer system.
 
 In this section, we will see a variety of non-deterministic (discrete-time)
-systems theories. The kind of non-deterministism --- possibilistic, stochastic, etc.
+systems theories. The kind of non-determinism --- possibilistic, stochastic, etc.
 --- will be encoded in a \emph{commutative monad}
 (\cref{def.commutative_monad}). 
 
@@ -107,7 +107,7 @@ current state doesn't determine precisely the next state.
 \end{definition}
 
 \begin{remark}
-  While \cref{def.deterministic_system} can be interepreted in any cartesian
+  While \cref{def.deterministic_system} can be interpreted in any cartesian
   category because it only used maps and the cartesian product,
   \cref{def.possibilistic_system} makes use of the \emph{power set} operation
   $\powset$ which sends a set to its set of subsets. This can't be interpreted
@@ -307,7 +307,7 @@ transformation $\sigma : MA \times MB \to M(A \times B)$ for which the following
      defined by
      $$f^{\powset}(X) = \bigcup_{a \in X} f(a).$$
    \item $\sigma_{A, B} : \powset A \times \powset B \to \powset (A \times B)$
-     is defind by
+     is defined by
      $$\sigma_{A, B}(X, Y) = \{(a, b) \mid a \in X, b \in Y\}.$$
   \end{itemize}
 \end{proposition}
@@ -515,11 +515,11 @@ whether a change is possible, we ask how \emph{probable} it is, we arrive at a
 notion of probabilistic or \emph{stochastic} system.
 
 The notion of a stochastic system is based on the idea that there should be a
-probability of a given change occuring, conditioned upon the current state. A
+probability of a given change occurring, conditioned upon the current state. A
 useful way to formulate the notion of conditional probability is the notion of
 \emph{stochastic map}. A stochastic map from $A$ to $B$ is a function
 which takes an $a \in A$ and yields a probability distribution $p(- \mid a)$ on
-elements of $B$ which we think of as likelyhoods conditioned on $a$. We can make
+elements of $B$ which we think of as likelihoods conditioned on $a$. We can make
 this more precise using the notion of monad.
 
 \begin{definition}\label{def.set_of_probs}
@@ -655,7 +655,7 @@ To be or not to be, that is the question.
   \end{center}
 Then we can see that there is a $50\%$ chance that `` '' and a $50\%$ chance
 that ``,'' follows the $5$-character sequence ``to be''. Of course, such a small
-sample woulnd't give us very useful statistics, but if we use the combined works
+sample wouldn't give us very useful statistics, but if we use the combined works
 of Shakespeare, we might get a better sense of what is likely to occur next.
 
 Now we build a stochastic system $\Sys{S}$ which will generate text. We take
@@ -1474,7 +1474,7 @@ prohibitively expensive, or impossible.
 
 \begin{definition}\label{def.cost_monad}
   We will define a monad $\Fun{Cost}$ on the category of sets. We think of a Kleisli map $f : A \to \Fun{Cost} ( B )$ as
-  assiging the best-case cost of producing a $b \in B$ from a given $a \in A$.
+  assigning the best-case cost of producing a $b \in B$ from a given $a \in A$.
   For practical reasons, we assume that only finitely many $b \in B$ are
   possible (that is, have finite cost) to produce from an $a \in A$.
 
@@ -1553,7 +1553,7 @@ A (discrete-time) system with costs is a $\Fun{Cost}$-system.
   The crucial question we want to ask of this model is: how much will the
   project cost in the best case scenario, given a sequence of external
   conditions? That is, we will iterate the action of the system through the
-  sequence of paramters starting at
+  sequence of parameters starting at
   $\emptyset \in \State{Proj}$, and then ask the cost of $\Set{Steps} \in
   \State{Proj}$ at the end. 
 \end{example}
@@ -1686,7 +1686,7 @@ We remark that this works not only in the category of sets, but in any cartesian
 \end{definition}
 
 \begin{exercise}
-  Show that the monad of $R$-valued rewards is really a commuativative monad.
+  Show that the monad of $R$-valued rewards is really a commutative monad.
   That is, show that the above data satisfies all each of the laws in
   \cref{def.commutative_monad}. Do you see where the commutativity comes into
   the mix?
@@ -1727,7 +1727,7 @@ We will show that the assignment $A \mapsto \probset(\rr \times A)$
 \lambda \coloneqq R \times MA \xto{\eta_M \times \id} MR \times MA \xto{\sigma^M} M(R \times A)
  \]
 Intuitively, this takes a reward $r \in R$ and a non-deterministic $a \in MA$
-and gives us the non-determinstic pair $(r, a)$.
+and gives us the non-deterministic pair $(r, a)$.
  
 \begin{proposition}
 Let $M$ be a commutative monad and $(R, +, 0)$ a commutative monoid. Then the
@@ -1753,7 +1753,7 @@ B)) \xto{M\sigma^R} M(R \times A \times B).
 \end{itemize}
 \end{proposition}
 \begin{proof}
-It is not obvious that this will satsify the monad laws, but it is a rather
+It is not obvious that this will satisfy the monad laws, but it is a rather
 straightforward check using the laws of $M$ and $R \times -$. We will not prove
 this result explicitly. However, we will give a slick proof for experts.
 
@@ -1934,7 +1934,7 @@ E\left( r \mapsto \sum_i \lambda_i p_i(r) \right) = \sum_{r \in \rr} \sum_i \lam
 
 \section{Changing the flavor of non-determinism: Monad maps}\label{sec.monad_map}
 
-In the same way that $0$ is a number, determinstic systems are 
+In the same way that $0$ is a number, deterministic systems are 
 non-deterministic systems, just with a trivial sort of non-determinism. Deterministic systems are $M$-systems for the
 \emph{identity monad} $\id(X) = X$. No matter what kind of non-determinism we
 are considering, we can always consider a deterministic system as a
@@ -2136,14 +2136,14 @@ Now we are ready to prove our lemma. We note that the top square in this diagram
 always commutes by the naturality of $\phi$. \cref{eqn.com_monad_map_mult} is the lower
 square in this diagram; so, if it commutes, then the outer square (which is
 \cref{eqn.com_monad_map_lift}) commutes. On the other hand, if
-\cref{eqn.com_monad_map_lift} commmutes for all $f : A \to M B$, we may take $f
+\cref{eqn.com_monad_map_lift} commutes for all $f : A \to M B$, we may take $f
 = \id : M A \to M A$ to find that the outer square of
 \cref{eqn.com_monad_map_lift_helper} becomes just \cref{eqn.com_monad_map_mult}.
 \end{proof}
 
 
 \begin{proposition}
-  Let $\phi : M \to N$ be a commutative monad morhpisms. Then there is a
+  Let $\phi : M \to N$ be a commutative monad morphisms. Then there is a
   strict symmetric monoidal functor
   $$\phi_{\ast} : \Cat{Kl}(M) \to \Cat{Kl}(N)$$
   acting as the identity on objects and sending the Kleisli map $f : A \to MB$
@@ -2360,7 +2360,7 @@ Consider a stochastic source process
   \]
 We can imagine, as Claude Shannon did, that this source is an interlocutor
 communicating over a wire. Suppose we have another interlocutor who reads
-the signal generated by our source and generates their own signal in repsonse:
+the signal generated by our source and generates their own signal in response:
   \[
 \begin{tikzpicture}[oriented WD, every fit/.style={inner xsep=\bbx, inner ysep=\bby}, bbx = 1cm, bby =.5cm, bb min width=1cm, bb port length=4pt, bb port sep=1, baseline=(X.center)]
 	\node[bb={1}{1}, fill=blue!10] (X) {$\Sys{Transformer}$};
@@ -2441,7 +2441,7 @@ In this section, we will give a new perspective on the category of lenses using
 the \emph{Grothendieck construction}. This perspective constructs the category
 of lenses out of an \emph{indexed category} $\smctx{-} : \cat{C}\op \to
 \Cat{Cat}$ of objects of the cartesian category $\cat{C}$ \emph{in context}.
-This construction works for \emph{any} indxed category $\cat{A} : \cat{C}\op \to
+This construction works for \emph{any} indexed category $\cat{A} : \cat{C}\op \to
 \Cat{Cat}$, which lets us define a notion of $\cat{A}$-lenses using any indexed
 category. By choosing an appropriate indexed category, we will arrive at the
 notion of $M$-lenses for a commutative monad $M$; this will give us the wiring
@@ -2458,7 +2458,7 @@ and the \emph{Grothendieck construction}.
 An indexed category $\cat{A} : \cat{C}\op \to \Cat{Cat}$ is a family of
 categories $\cat{A}(C)$ that varies functorially with an object $C \in \cat{C}$
 of the \emph{base category} $\cat{C}$ (see \cref{def.indexed_cat} for the full
-definition). We will intepret the base category $\cat{C}$ as the category of
+definition). We will interpret the base category $\cat{C}$ as the category of
 passforward maps, and the categories $\cat{A}(C^+)$ as the categories of
 passback maps that take $C^+$ as an extra argument.
 %%
@@ -4582,7 +4582,7 @@ channel to $\Sys{S_2}$. But this channel has noise given by
   \rho(\const{tails}) &= \frac{1}{10}\const{heads} + \frac{9}{10}\const{tails} 
 \end{align*}
 
-Explictly, we will compose with the wiring diagram:
+Explicitly, we will compose with the wiring diagram:
 \[
 \begin{tikzpicture}[oriented WD, every fit/.style={inner xsep=\bbx, inner ysep=\bby}, bbx = 1cm, bby =.5cm, bb min width=1cm, bb port length=0pt, bb port sep=1, baseline=(X.center)]
 	\node[bb={0}{1}, fill=blue!10, dashed] (X) {$\phantom{\Sys{Source}}$};
@@ -4652,7 +4652,7 @@ theory, check out Chapter 5 of \cite{perrone2021notes}.
 
 We then saw how the notion of lens could be generalized to any indexed category.
 This notion of generalized lens is due to Spivak in
-\cite{spivak2019generalized}. This generalization of lens will underly our
+\cite{spivak2019generalized}. This generalization of lens will underlie our
 formal notion of systems theory, which will be introduced in the
 next chapter. 
 
