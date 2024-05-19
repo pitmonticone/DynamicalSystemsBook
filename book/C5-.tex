@@ -43,7 +43,7 @@ is called \emph{compositionality}. In this chapter, we will prove a general
 compositionality theorem concerning any sort of behavior in any systems theory.
 
 But the behaviors of the component systems must be compatible with
-eachother: if a system $\Sys{S_1}$ has its parameters set by the exposed
+each other: if a system $\Sys{S_1}$ has its parameters set by the exposed
 variables of a system $\Sys{S_2}$, then a behavior $\phi_1$ of $\Sys{S_1}$ will be
 compatible with a behavior $\phi_2$ of $\Sys{S_2}$ when $\phi_2$ is a behavior
 for the parameters charted by the variables exposed by $\phi_1$.
@@ -294,7 +294,7 @@ everything in that generality.\footnote{This will help us later when we deal
 \end{remark}
 
 Now we'll go through and define the basic operations of matrix arithmetic:
-mutliplication, Kronecker product (also known as the tensor product), and
+multiplication, Kronecker product (also known as the tensor product), and
 partial trace.
 
 \begin{definition}\label{def.matrix_of_sets_multiplication}
@@ -443,7 +443,7 @@ exposes its entire state. That result will be nicely packaged in a beautiful
 categorical way: we'll make an \emph{doubly indexed functor}.
 
 But for now, let's just show that tensoring and partially tracing steady state
-matrices correponds to taking the parallel product and wiring an input to an
+matrices corresponds to taking the parallel product and wiring an input to an
 output, respectively, of systems.
 
 \begin{proposition}\label{prop.steady_state_matrix_parallel_tensor}
@@ -465,7 +465,7 @@ output, respectively, of systems.
 
 
 \begin{remark}
-  \cref{prop.steady_state_matrix_parallel_tensor} is our motiviation for using
+  \cref{prop.steady_state_matrix_parallel_tensor} is our motivation for using
   the symbol ``$\otimes$'' for the parallel product of systems.
 \end{remark}
 
@@ -609,7 +609,7 @@ commutative diagram:
 The horizontal maps take the steady states of a system, while the vertical map
 on the left wires together the system with that wiring diagram, and the vertical
 map on the right applies that transformation of the matrix. In the next section,
-we will see how this square can be interepreted as a naturality condition in a
+we will see how this square can be interpreted as a naturality condition in a
 \emph{doubly indexed functor}.
 
 One thing to notice here is that taking the partial trace (the right vertical
@@ -707,7 +707,7 @@ so let's give a number of examples:
      between them. In other words, maps $T \to X$ are edges in $X$. So we may
      say that $T$ represents edges.
    \item Suppose that $\cat{C}$ is the category of rings, and let $T = \zz[x, y]$ be
-     the ring of polynomials in two variables. A ring homomoprhism $f : T \to X$
+     the ring of polynomials in two variables. A ring homomorphism $f : T \to X$
      can send $x$ to any element $f(x)$ and similarly $y$ to any element $f(y)$;
      once it's done that, the value of $f$ on any polynomial in $x$ and $y$ must
      be given by
@@ -765,7 +765,7 @@ wiring diagram
 \end{tikzpicture}
 \]
 In this section, we will see a general formula for taking an arbitrary lens and
-turning it into a matrix. Mutliplying by the matrix will then correspond to
+turning it into a matrix. Multiplying by the matrix will then correspond to
 wiring according to that lens.
 
 This process of turning a lens into a matrix will give us a functor $\Cat{Lens}
@@ -927,7 +927,7 @@ part of $a^+$ which is passed forward on the outgoing wires, and $a^-$ is the
 inner input which comes from the inner output $a^+$ and outer input $b^-$.
 
 To take a concrete example, suppose that $\lens{w^{\sharp}}{w}$ were the
-following wiring diagarm:
+following wiring diagram:
 \[
 \begin{tikzpicture}[oriented WD, every fit/.style={inner xsep=\bbx, inner ysep=\bby}, bbx = .3cm, bby =.3cm, bb min width=.5cm, bb port length=2pt, bb port sep=1, baseline=(S'.center)]
 	\node[bb={2}{2}, fill=blue!10, dashed] (S) {};
@@ -980,7 +980,7 @@ Calculate the entries of the matrix $\Cat{Chart}_{\determ}\left( \lens{\ord{1}}{
 
 By the functoriality of \cref{prop.lens_to_matrix_functor_discrete}, we can
 calculate the matrix of a big wiring diagram by expressing it in terms of a
-series of traces, and mutliplying the resulting matrices together. This means
+series of traces, and multiplying the resulting matrices together. This means
 that the process of multiplying, tensoring, and tracing matrices described by a
 wiring diagram is well described by the matrix we constructed in
 \cref{prop.lens_to_matrix_functor_discrete}, since we already know that it
@@ -1055,7 +1055,7 @@ entirely in terms of the double category $\Cat{Arena}_{\determ}$:
   \item It sends a lens $\lens{w^{\sharp}}{w}$ to the set of squares $\beta :
     \lens{I}{O} \to \lens{w^{\sharp}}{w}$, indexed by their top and bottom
     boundaries.
-  \item It sends a square $\alpha$ to the map given by horizontal compostion
+  \item It sends a square $\alpha$ to the map given by horizontal composition
     $\beta \mapsto \beta \mid \alpha$.
 \end{itemize}
 
@@ -1478,7 +1478,7 @@ sorts of composition interact.
     it with the first one and then with the second one.
   \item (Functorial Interchange) This asks us to suppose that we have a pair of
     wiring patterns and compatible charts between them (a square in $\Cat{Arena}$). The law then says that if we
-    take a bunch of behaviors whose charts are compatable according to the first
+    take a bunch of behaviors whose charts are compatible according to the first
     wiring pattern, wire them together, and then compose with a behavior of the
     second chart, we get the same thing as if we compose them all with behaviors
     of the first chart, noted that they were compatible with the second wiring
