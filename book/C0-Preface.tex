@@ -11,7 +11,7 @@
 
 This book is a work in progress --- including the acknowledgements below! Use at your own peril!
 
-Categorical systems theory is an emerging field of mathematics which seeks to apply the methods of category theory to general systems theory. General systems theory is the study of systems --- ways things can be and change, and models thereof --- in full generality. The difficulty is that there doesn't seem to be a single core idea of what it means to be a ``system''. Different people have, for different purposes, come up with a vast array of different modeling techniques and definitions that could be called ``systems''. There is often little the same in the precise content of these definitions, though there are still strong, if informal, analogies to be made accross these different fields. This makes coming up with a mathematical theory of general systems tantalizing but difficult: what, after all, is a system in general?
+Categorical systems theory is an emerging field of mathematics which seeks to apply the methods of category theory to general systems theory. General systems theory is the study of systems --- ways things can be and change, and models thereof --- in full generality. The difficulty is that there doesn't seem to be a single core idea of what it means to be a ``system''. Different people have, for different purposes, come up with a vast array of different modeling techniques and definitions that could be called ``systems''. There is often little the same in the precise content of these definitions, though there are still strong, if informal, analogies to be made across these different fields. This makes coming up with a mathematical theory of general systems tantalizing but difficult: what, after all, is a system in general?
 
 Category theory has been describe as the mathematics of formal analogy making. It allows us to make analogies between fields by focusing not on content of the objects of those fields, but by the ways that the objects of those fields relate to one another. Categorical systems theory applies this idea to general systems theory, avoiding the issue of not having a contentful definition of system by instead focusing on the ways that systems interact with eachother and their environment.
 
@@ -41,7 +41,7 @@ This abstract overview leaves a lot of questions to be answered. What is, or wha
   \end{itemize}
   \end{informal}
 
-  We will give a semi-formal\footnote{And for experts, a formal definition, though we won't fully justify it.} definition of dynamical systems doctrine in \cref{Chapter.6}. For the first five chapters of this book on the other hand, we will work within a fixed doctrine of dynamical systems which we might call the \emph{parameter-setting} doctrine. This doctrine gives a particular answer to the above questions, based around the following defintion of a \emph{system}.
+  We will give a semi-formal\footnote{And for experts, a formal definition, though we won't fully justify it.} definition of dynamical systems doctrine in \cref{Chapter.6}. For the first five chapters of this book on the other hand, we will work within a fixed doctrine of dynamical systems which we might call the \emph{parameter-setting} doctrine. This doctrine gives a particular answer to the above questions, based around the following definition of a \emph{system}.
 
 \begin{informal}\label{inf.dynam_sys}
   A \emph{dynamical system} consists of:
@@ -54,7 +54,7 @@ This abstract overview leaves a lot of questions to be answered. What is, or wha
   state that are \emph{exposed} or \emph{output} to the environment.
 \end{informal}
 
-In the first two chatpers, we will see a variety of examples of such systems, including discrete-time deterministic systems, systems of differential equations, and non-deterministic systems such as Markov decision processes. We will also see what composition patterns can be in the parameter-setting doctrine; they can be drawn as wiring diagrams like this:
+In the first two chapters, we will see a variety of examples of such systems, including discrete-time deterministic systems, systems of differential equations, and non-deterministic systems such as Markov decision processes. We will also see what composition patterns can be in the parameter-setting doctrine; they can be drawn as wiring diagrams like this:
 \[
 \begin{tikzpicture}[oriented WD, every fit/.style={inner xsep=\bbx, inner ysep=\bby}, bb small]
   \node[bb={2}{2}, fill=blue!10] (X1) {};
@@ -123,7 +123,7 @@ Using this realization, we will prove our main compositionality theorem in \cref
     it with the first one and then with the second one.
   \item Suppose that we have a pair of
     wiring patterns and compatible charts between them. If we
-    take a bunch of behaviors whose charts are compatable according to the first
+    take a bunch of behaviors whose charts are compatible according to the first
     wiring pattern, wire them together, and then compose with a behavior of the
     second chart, we get the same thing as if we compose them all with behaviors
     of the first chart, noted that they were compatible with the second wiring
