@@ -192,7 +192,7 @@ Note
 that the parameters of the original differential system
 $\Sys{LK}$ are considered as exposed variables of state in the behavioral
 approach. This is because the behavioral approach composes systems by setting
-exposed variables equal to eachother, so the parameters must be considered as
+exposed variables equal to each other, so the parameters must be considered as
 exposed variables so that they can be set equal to other variables.
 \end{remark}
 
@@ -863,7 +863,7 @@ to be spans in \emph{free finitely complete categories}. We'll see that this is
 precisely the case, although we will want to restrict to a certain class of
 ``nice'' spans.
 
-Before we see a formal definiton of bubble diagram, let's give an informal definition.
+Before we see a formal definition of bubble diagram, let's give an informal definition.
 \begin{informal}
   A \emph{bubble diagram} is a diagram which consists of a number of \emph{inner
   bubbles} drawn within an \emph{outer bubble}, each with some \emph{ports}.
@@ -1626,7 +1626,7 @@ is an undirected wiring diagram in the essentially algebraic theory of real vect
           \end{example}
 
           \begin{remark}
-            It is not as easy to separate the bubble diagrams from the undirected wiring diagrams when passing to a general essentially algebraic theory. This is fundamentally because the operations of the theory could be arbitrary, and so no longer guarentee that the diagrams really satisfy the properties that bubble diagrams should.
+            It is not as easy to separate the bubble diagrams from the undirected wiring diagrams when passing to a general essentially algebraic theory. This is fundamentally because the operations of the theory could be arbitrary, and so no longer guarantee that the diagrams really satisfy the properties that bubble diagrams should.
           \end{remark}
 
 
@@ -1684,7 +1684,7 @@ We can picture a morphism $a : \ell' \to \ell$ as in the following diagram:
            \item For every interval $\ell$, a set $X(\ell)$ of behaviors which may occur during the interval $\ell$.
      \item For every morphism $a : \ell' \to \ell$ of intervals, a restriction function
            $$b \mapsto b|_{a} : X(\ell) \to X(\ell')$$
-           which selects out the part of $b$ occuring during the subinterval $\ell'$ beginning at $a$ in $\ell$.
+           which selects out the part of $b$ occurring during the subinterval $\ell'$ beginning at $a$ in $\ell$.
     \end{enumerate}
     This data is required to satisfy the following conditions:
     \begin{enumerate}
@@ -1723,7 +1723,7 @@ Gluing is a bit more tricky. It means that a behavior is determined by what it d
   The restriction maps are given by restricting: if $a : \ell' \to \ell$, then $f|_{a} = f \circ (x \mapsto a + x)$ where $x \mapsto a + x : (0, \ell') \to (0, \ell)$ is the inclusion of $(0, \ell')$ into $(0, \ell)$ shifted over by $a$. Unit and functoriality conditions follow directly from unit and associativity of composition; the only tricky law to check is the gluing condition. We can check both parts of the gluing condition using \cref{lem:gluing.condition.two.conditions}:
   \begin{enumerate}
           \item (Separation) Suppose that $f_{1}$ and $f_{2} : (0, \ell) \to \rr$ are $n$-times continuously differentiable and that their restriction to any subintervals are equal. Since $(0, \ell)$ is open, for every $x \in (0, \ell)$ there is a strict subinterval in $(0, \ell)$ containing $x$; therefore, $f_{1}$ and $f_{2}$ are equal on this subinterval and therefore at $x$. So $f_{1} = f_{2}$.
-          \item (Existence) Suppose we have compatible functions $f_{a} : (0, \ell_{a}) \to \rr$ for every $a : \ell_{a} \rightsquigarrow \ell$. For any $x \in (0, \ell)$, there is a strict subinterval $a_{x} : \ell_{a_{x}} \rightsquigarrow \ell$ containing $x$ in the sense that $x \in (a_{x}, a_{x} + \ell_{a_{x}})$. We may therefore define a function $f : (0, \ell) \to \rr$ by $f(x) = f_{a_x}(x)$. This is well defined since if $a' : \ell' \rightsquigarrow \ell$ is any other strict subinterval containing $x$, then $x$ is also in their intersection which is a strict subinterval; by the compatibility of the functions $f_{a}$, it follows that $f_{a_{x}}(x) = f_{a'}(x)$ on this intersection. Since being $n$-times continuously differentiable is a local property and $f$ is defined to be a $n$-times continously differentiable in the neighborhood of any point, $f$ is also $n$-times continously differentiable.
+          \item (Existence) Suppose we have compatible functions $f_{a} : (0, \ell_{a}) \to \rr$ for every $a : \ell_{a} \rightsquigarrow \ell$. For any $x \in (0, \ell)$, there is a strict subinterval $a_{x} : \ell_{a_{x}} \rightsquigarrow \ell$ containing $x$ in the sense that $x \in (a_{x}, a_{x} + \ell_{a_{x}})$. We may therefore define a function $f : (0, \ell) \to \rr$ by $f(x) = f_{a_x}(x)$. This is well defined since if $a' : \ell' \rightsquigarrow \ell$ is any other strict subinterval containing $x$, then $x$ is also in their intersection which is a strict subinterval; by the compatibility of the functions $f_{a}$, it follows that $f_{a_{x}}(x) = f_{a'}(x)$ on this intersection. Since being $n$-times continuously differentiable is a local property and $f$ is defined to be a $n$-times continuously differentiable in the neighborhood of any point, $f$ is also $n$-times continously differentiable.
     \end{enumerate}
 
     We can think of the interval $\mathcal{C}^{0}$ as the set of real numbers \emph{varying continuously in time}.
@@ -2158,11 +2158,11 @@ gluing them together using pushouts.
           \item Maps between systems can be composed along the composition patterns when we have a square in the double category of cospans.
   \end{enumerate}
 
-There is a close formal analogy between the diagrammatic and the behavioral approachs to systems theory: \cref{eqn:pushout.composition.of.systems} is the same diagram as \cref{eqn:pullback.composition.of.systems}, just with all the arrows going the other way around. This means we can use bubble diagrams to describe composites of diagrams as well!
+There is a close formal analogy between the diagrammatic and the behavioral approaches to systems theory: \cref{eqn:pushout.composition.of.systems} is the same diagram as \cref{eqn:pullback.composition.of.systems}, just with all the arrows going the other way around. This means we can use bubble diagrams to describe composites of diagrams as well!
 
 \subsection{Port-plugging systems theories: Labelled graphs}
 
-Let's work out a class of port-plugging theories to get a sense for how it feels to work within the doctrine. Most of the examples we gave above were graphs whose nodes and edges were labebelled with some sort of data. We can formalize this situation in general.
+Let's work out a class of port-plugging theories to get a sense for how it feels to work within the doctrine. Most of the examples we gave above were graphs whose nodes and edges were labelled with some sort of data. We can formalize this situation in general.
 
 First, let's recall what a \emph{graph} is, for a category theorist. There are many different flavors of graph, and what category theorists tend to prefer would be called \emph{directed multi-graphs with loops} by more traditional graph theorists. We will just call them graphs.
 
@@ -2235,7 +2235,7 @@ The category $\Cat{Graph}$ has all finite colimits. The empty graph has no nodes
     As you can see, taking the pushout glues together the two graphs over their shared part.
   \end{example}
 
-We are interested in labelled graphs. We will give a general definition of labelled graphs in the upcoming \cref{defn:labelled.graph.general}, but for now we make the following defintion of two important special cases.
+We are interested in labelled graphs. We will give a general definition of labelled graphs in the upcoming \cref{defn:labelled.graph.general}, but for now we make the following definition of two important special cases.
 \begin{definition}\label{defn:labelled.graph}
   Let $G$ be a graph and $L$ a set of \emph{labels}. Then
   \begin{enumerate}
@@ -2292,7 +2292,7 @@ First, let's consider edge labellings. An edge labelling of $G$ in $L$ is a func
 The case of node labellings is very similar. Let $\ell : G_{0} \to L$ be a node labelling. We can then define a map $\hat{\ell} : G \to KL$ by $\hat{\ell}_{0} = \ell$ and $\hat{\ell}_{1}(e) = (\ell(s(e)), \ell(t(e)))$. Conversely, for any map $\ell : G \to KL$ we have $\ell_{0} : G_{0} \to L$. These two processes are inverse since any edge $e : a \to b$ must be sent to a edge $\ell(a) \to \ell(b)$, but there is exactly one such edge.
   \end{proof}
 
-This reframing justifies us generaling the notion of labelling to allow values in any graph.
+This reframing justifies us generalizing the notion of labelling to allow values in any graph.
   \begin{definition}
 Let $\mathcal{L}$ be a graph. A graph labelled in $\mathcal{L}$ is a graph $G$ together with a labelling map $\ell : G \to \mathcal{L}$.
 
@@ -2300,7 +2300,7 @@ A map of $\mathcal{L}$-labelled graphs $G \to H$ is a map $\varphi : G \to H$ wh
     \end{definition}
 
       \begin{example}
-Continuing \cref{ex:transition.system.labelled.graph}, we can think of a transition diagram for an $\lens{I}{O}$-system as a $KO \times EL$ labelled graph. By the universal propoerty of the product, a labelling in $KO \times EI$ is a labelling in $KO$ together with a labelling in $EI$, which is to say a node labelling in $O$ together with an edge labelling in $I$.
+Continuing \cref{ex:transition.system.labelled.graph}, we can think of a transition diagram for an $\lens{I}{O}$-system as a $KO \times EL$ labelled graph. By the universal property of the product, a labelling in $KO \times EI$ is a labelling in $KO$ together with a labelling in $EI$, which is to say a node labelling in $O$ together with an edge labelling in $I$.
         \end{example}
 
 We can think of a general graph $\mathcal{L}$ as giving us a system of labels with constraints. The nodes of $\mathcal{L}$ are the possible node-labels, and the edges of $\mathcal{L}$ are the possible edge labels. But an edge label is constrained to go between two node labels. Therefore, the way the edges are linked together constrains what sort of labels an edge might have given the labels its source and target have.
@@ -2448,7 +2448,7 @@ The double category $\Cat{Bubble}_{\cat{T}}$ of bubble diagrams (with wires type
 	\arrow[dashed, from=4-1, to=4-4]
 \end{tikzcd}
     \]
-    The solid diagram is a square $\alpha$ from $D$ to the composite of $I \to L \from M$ and $M \to L' \from O$. The dashed arrows are uniquely determined by compsing $D \to I \to L$ and $D \to O \to L'$ respectively, and because the two solid squares commute, they are both equalized when composed with the inclusions into $L +_{M} L'$. Then, by \cref{lem:pushout.also.pullback}, there is a unique map $D \to M$ making the diagram commute; but this is precisely the splitting of $\alpha$ into two squares that we needed.
+    The solid diagram is a square $\alpha$ from $D$ to the composite of $I \to L \from M$ and $M \to L' \from O$. The dashed arrows are uniquely determined by composing $D \to I \to L$ and $D \to O \to L'$ respectively, and because the two solid squares commute, they are both equalized when composed with the inclusions into $L +_{M} L'$. Then, by \cref{lem:pushout.also.pullback}, there is a unique map $D \to M$ making the diagram commute; but this is precisely the splitting of $\alpha$ into two squares that we needed.
   \end{proof}
 
 Because of \cref{thm:bubble.diagrams.are.spanlike}, we can use \cref{thm:representable.lax.doubly.indexed.functors} to construct representable lax doubly indexed functors in the port-pluggin doctrine. As an example of such a functor, consider the theory of (unlabelled) graphs and the system $\Sys{P}_{3} = \bullet \to \bullet \to \bullet \to \bullet$, with interface $\bullet \quad \bullet$ included as its endpoints, in this theory. This system $\Sys{P}_{3}$ represents paths of length $3$, and so we get a lax doubly indexed functor sending a graph with boundary to the set of paths of length $3$ from one boundary node to another in it. That is doubly indexed functor is lax and not taut reflects an important fact about the compositionality of graphs: when graphs are composed, new paths can appear which weren't possible before.
@@ -2460,7 +2460,7 @@ Because of \cref{thm:bubble.diagrams.are.spanlike}, we can use \cref{thm:represe
 
 There has been a lot of work done in the port-plugging doctrine, and we have hardly scratched the surface.
 
-In its categorical guise, this doctrine was innaugurated with Brendan Fong's work on \emph{decorated cospans} in his thesis \cite{Fong:Thesis}. For examples of putting this theory to work, see \cite{baez2018compositional, baez2016compositional, baez2017compositional}. This was later expanded by Kenny Courser and John Baez to a theory of \emph{structured cospans} in \cite{Baez.Courser:Structured.Cospans} (see \cite{Baez.Courser.Vasilakopolou:Structured.vs.Decorated} for a detailed comparison between these approaches). John Baez and his students have used these theories in a variety of settings; see for example \cite{Baez.Master:Open.Petri.Nets, Baez.Courser:Open.Markov.Processes}.
+In its categorical guise, this doctrine was inaugurated with Brendan Fong's work on \emph{decorated cospans} in his thesis \cite{Fong:Thesis}. For examples of putting this theory to work, see \cite{baez2018compositional, baez2016compositional, baez2017compositional}. This was later expanded by Kenny Courser and John Baez to a theory of \emph{structured cospans} in \cite{Baez.Courser:Structured.Cospans} (see \cite{Baez.Courser.Vasilakopolou:Structured.vs.Decorated} for a detailed comparison between these approaches). John Baez and his students have used these theories in a variety of settings; see for example \cite{Baez.Master:Open.Petri.Nets, Baez.Courser:Open.Markov.Processes}.
 
 
 
